@@ -1,3 +1,4 @@
+//the user is always registered as not admin. Admin status has to be changed directly from database
 const mongoose= require("mongoose");
 
 const userSchema = new mongoose.Schema(

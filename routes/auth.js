@@ -3,6 +3,8 @@ const User= require("../models/User");
 const CryptoJS = require("crypto-js");
 const jwt = require("jsonwebtoken");
 
+//the user is always registered as not admin. Admin status has to be changed directly from database
+//header value: key:token value: Bearer tokenno
 //REGISTER
 router.post("/register", async (req, res) => {
     const newUser = new User({
